@@ -22,9 +22,20 @@
             target: "target url",
         }, options);
 
+<<<<<<< HEAD
 
         $this = this;
 
+=======
+            var settings = $.extend( {
+				csrf_token: "csrf_token",
+                target: "target url",
+			}, options ),
+				$this = $( this );
+			
+			
+			var post = function() {
+>>>>>>> js var declaration, the right way
 
 
         var post = function() {
@@ -45,9 +56,13 @@
 
         $this.waypoint(function() {
 
+<<<<<<< HEAD
             var new_comment_number = $(this).data('number'); // HTML5 <... data-number=""> custom attr
             if(new_comment_number > comment_number) {
                 comment_number = new_comment_number;
+=======
+			return this;
+>>>>>>> js var declaration, the right way
 
                 post();
 
