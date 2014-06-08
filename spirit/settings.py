@@ -27,7 +27,8 @@ ST_USER_LAST_SEEN_THRESHOLD_MINUTES = 1
 
 ST_PRIVATE_FORUM = False
 
-ST_ALLOWED_UPLOAD_IMAGES = ('jpeg', 'png', 'gif')
+ST_ALLOWED_UPLOAD_IMAGE_FORMAT = ('jpeg', 'png', 'gif')
+ST_ALLOWED_UPLOAD_IMAGE_EXT = ST_ALLOWED_UPLOAD_IMAGE_FORMAT + ('jpg', )
 
 # check out http://pythonhosted.org/Markdown/extensions/index.html
 ST_MARKDOWN_EXT = (
@@ -52,26 +53,25 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # Django settings defined below...
 #
 
-# django-djconfig
-DJC_BACKEND = 'djconfig'
+INSTALLED_APPS = (
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
 
-# django-haystack
-HAYSTACK_CONNECTIONS = {
-    'default': {
-        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
-        'PATH': os.path.join(os.path.dirname(__file__), 'whoosh_index'),
-    },
-}
+    'spirit',
+    'haystack',
+    'djconfig',
+    #'debug_toolbar'
+)
 
 # python manage.py createcachetable spirit_cache
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
         'LOCATION': 'spirit_cache',
-    },
-    # django-djconfig
-    'djconfig': {
-        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
     },
 }
 
@@ -93,7 +93,6 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'djconfig.middleware.DjConfigLocMemMiddleware',  # django-djconfig
     #'spirit.middleware.XForwardedForMiddleware',
     'spirit.middleware.TimezoneMiddleware',
     'spirit.middleware.LastIPMiddleware',
@@ -111,7 +110,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.tz',
     'django.core.context_processors.request',
     'django.contrib.messages.context_processors.messages',
-    'djconfig.context_processors.config',  # django-djconfig
 )
 
 
@@ -131,3 +129,36 @@ TEMPLATE_LOADERS = (
     )),
 )
 
+<<<<<<< HEAD
+=======
+#
+# Third-party apps settings defined below...
+#
+
+# django-djconfig
+
+DJC_BACKEND = 'djconfig'
+
+CACHES.update({
+    'djconfig': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+    },
+})
+
+MIDDLEWARE_CLASSES += (
+    'djconfig.middleware.DjConfigLocMemMiddleware',
+)
+
+TEMPLATE_CONTEXT_PROCESSORS += (
+    'djconfig.context_processors.config',
+)
+
+# django-haystack
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+        'PATH': os.path.join(os.path.dirname(__file__), 'whoosh_index'),
+    },
+}
+>>>>>>> settings refactor
