@@ -1,0 +1,1443 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-05-09 01:27-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\forms\admin.py:46
+msgid ""
+"The category you are updating can not has a parent since it has childrens"
+msgstr ""
+
+
+#: .\forms\comment.py:24
+msgid "Write comment..."
+msgstr "新建留言..."
+
+#: .\forms\comment_flag.py:30
+msgid "This flag already exists"
+msgstr "你已经加过标记了"
+
+#: .\forms\comment_like.py:28
+msgid "This like already exists"
+msgstr "你已经喜欢过了"
+
+#: .\forms\search.py:20
+msgid "Your search must contain at least %(length)s characters."
+msgstr "你的搜索必须有 %(length)s 字符."
+
+#: .\forms\search.py:42
+msgid "Filter by"
+msgstr "过滤"
+
+#: .\forms\topic.py:29
+msgid "Category"
+msgstr "节点"
+
+#: .\forms\topic.py:30
+msgid "Chose a category"
+msgstr "选择节点"
+
+#: .\forms\topic.py:40
+msgid "The chosen category is closed"
+msgstr "你选择的节点已经关闭"
+
+#: .\forms\topic_favorite.py:28
+msgid "This favorite already exists"
+msgstr "您的收藏已经存在"
+
+#: .\forms\topic_notification.py:33
+msgid "This notification already exists"
+msgstr "通知已经存在"
+
+#: .\forms\topic_private.py:43
+msgid "user1, user2, ..."
+msgstr "用户1, 用户2, ..."
+
+#: .\forms\topic_private.py:70 .\models\user.py:44
+msgid "username"
+msgstr "用户名"
+
+#: .\forms\topic_private.py:71
+msgid "Invite user"
+msgstr "邀请用户"
+
+#: .\forms\topic_private.py:89 .\forms\topic_private.py:120
+msgid "%(username)s is already a participant"
+msgstr "%(username)s 已经加入"
+
+#: .\forms\user.py:15
+msgid "Leave blank"
+msgstr "请留空"
+
+#: .\forms\user.py:26
+msgid "Do not fill this field."
+msgstr "此字段请留空。"
+
+#: .\forms\user.py:39
+msgid "The username is taken."
+msgstr "用户名被占用。"
+
+#: .\forms\user.py:56
+msgid "Username or Email"
+msgstr "用户名或邮箱"
+
+#: .\forms\user.py:56
+msgid "Username or Email:"
+msgstr "用户名或邮箱:"
+
+#: .\forms\user.py:56
+msgid "Resend activation email"
+msgstr "重新发送激活邮件"
+
+#: .\forms\user.py:61 .\templates\spirit\user\profile_update.html:12
+msgid "Email"
+msgstr "邮箱"
+
+#: .\forms\user.py:62 .\templates\spirit\user\profile_update.html:15
+msgid "Password"
+msgstr "密码"
+
+#: .\forms\user.py:72
+msgid "Your password was entered incorrectly. Please enter it again."
+msgstr "您输入的密码不对，请重新输入。"
+
+#: .\forms\user.py:81
+msgid "Try a different email."
+msgstr "请试试其他的邮箱。"
+
+#: .\models\category.py:12
+msgid "category parent"
+msgstr "父节点"
+
+#: .\models\category.py:14 .\models\topic.py:21
+msgid "title"
+msgstr "标题"
+
+#: .\models\category.py:16
+msgid "description"
+msgstr "简介"
+
+#: .\models\category.py:17 .\models\topic.py:26
+msgid "closed"
+msgstr "已关闭"
+
+#: .\models\category.py:18
+msgid "removed"
+msgstr "已删除"
+
+#: .\models\category.py:19
+msgid "private"
+msgstr "私有的"
+
+#: .\models\category.py:28 .\models\topic.py:19
+msgid "category"
+msgstr "节点"
+
+#: .\models\category.py:29
+msgid "categories"
+msgstr "节点"
+
+#: .\models\comment.py:22 .\models\comment.py:36 .\models\comment.py:52
+msgid "comment"
+msgstr "评论"
+
+#: .\models\comment.py:23
+msgid "topic moved"
+msgstr "主题已经被移动"
+
+#: .\models\comment.py:24
+msgid "topic closed"
+msgstr "主题被关闭了"
+
+#: .\models\comment.py:25
+msgid "topic unclosed"
+msgstr "主题被取消关闭了"
+
+#: .\models\comment.py:26
+msgid "topic pinned"
+msgstr "主题被制定了"
+
+#: .\models\comment.py:27
+msgid "topic unpinned"
+msgstr "主题被取消制定了"
+
+#: .\models\comment.py:33 .\models\comment_bookmark.py:20 .\models\topic.py:18
+#: .\models\topic_notification.py:28 .\models\topic_unread.py:18
+#: .\models\user.py:90
+msgid "user"
+msgstr "用户"
+
+#: .\models\comment.py:37 .\models\comment_history.py:16
+msgid "comment html"
+msgstr "留言Html"
+
+#: .\models\comment.py:38
+msgid "action"
+msgstr "操作"
+
+#: .\models\comment.py:44
+msgid "modified count"
+msgstr "修改次数"
+
+#: .\models\comment.py:45
+msgid "likes count"
+msgstr "喜欢数"
+
+#: .\models\comment.py:53 .\templates\spirit\user\profile_comments.html:5
+msgid "comments"
+msgstr "评论数"
+
+#: .\models\comment_bookmark.py:28
+msgid "comment bookmark"
+msgstr "留言收藏"
+
+#: .\models\comment_bookmark.py:29
+msgid "comments bookmarks"
+msgstr "留言收藏"
+
+#: .\models\comment_flag.py:10
+msgid "Spam"
+msgstr "垃圾贴"
+
+#: .\models\comment_flag.py:11
+msgid "Other"
+msgstr "其他"
+
+#: .\models\comment_flag.py:26
+msgid "comment flag"
+msgstr "留言标记"
+
+#: .\models\comment_flag.py:27
+msgid "comments flags"
+msgstr "留言标记"
+
+#: .\models\comment_flag.py:42
+msgid "reason"
+msgstr "理由"
+
+#: .\models\comment_flag.py:43
+msgid "body"
+msgstr "正文"
+
+#: .\models\comment_flag.py:49
+msgid "flag"
+msgstr "标记"
+
+#: .\models\comment_flag.py:50
+msgid "flags"
+msgstr "标记"
+
+#: .\models\comment_history.py:14
+msgid "original comment"
+msgstr "原始评论"
+
+#: .\models\comment_history.py:22
+msgid "comment history"
+msgstr "历史评论"
+
+#: .\models\comment_history.py:23
+msgid "comments history"
+msgstr "历史评论"
+
+#: .\models\comment_like.py:24 .\templates\spirit\comment\_render_list.html:53
+#: .\templates\spirit\comment\_render_list.html:109
+msgid "like"
+msgstr "喜欢"
+
+#: .\models\comment_like.py:25 .\templates\spirit\user\profile_likes.html:5
+msgid "likes"
+msgstr "喜欢"
+
+#: .\models\topic.py:23
+msgid "date"
+msgstr "日期"
+
+#: .\models\topic.py:24
+msgid "last active"
+msgstr "最近更新"
+
+#: .\models\topic.py:25
+msgid "pinned"
+msgstr "已置顶"
+
+#: .\models\topic.py:29
+msgid "views count"
+msgstr "查看数"
+
+#: .\models\topic.py:30 .\models\user.py:26
+msgid "comment count"
+msgstr "评论数目"
+
+#: .\models\topic.py:37
+msgid "topic"
+msgstr "主题"
+
+#: .\models\topic.py:38 .\templates\spirit\user\profile_topics.html:5
+msgid "topics"
+msgstr "主题"
+
+#: .\models\topic_favorite.py:19
+msgid "favorite"
+msgstr "收藏"
+
+#: .\models\topic_favorite.py:20
+msgid "favorites"
+msgstr "收藏"
+
+#: .\models\topic_notification.py:20
+msgid "Undefined"
+msgstr "其他"
+
+#: .\models\topic_notification.py:21
+msgid "Mention"
+msgstr "提起"
+
+#: .\models\topic_notification.py:22
+msgid "Comment"
+msgstr "留言"
+
+#: .\models\topic_notification.py:44
+msgid "topic notification"
+msgstr "主题通知"
+
+#: .\models\topic_notification.py:45
+msgid "topics notification"
+msgstr "主题通知"
+
+#: .\models\topic_private.py:24
+msgid "private topic"
+msgstr "私有主题"
+
+#: .\models\topic_private.py:25
+msgid "private topics"
+msgstr "私有主题"
+
+#: .\models\topic_unread.py:31
+msgid "topic unread"
+msgstr "未读主题"
+
+#: .\models\topic_unread.py:32
+msgid "未读主题"
+msgstr ""
+
+#: .\models\user.py:18
+msgid "location"
+msgstr "位置"
+
+#: .\models\user.py:19
+msgid "last seen"
+msgstr "最近上线"
+
+#: .\models\user.py:20
+msgid "last ip"
+msgstr "登录IP"
+
+#: .\models\user.py:21
+msgid "time zone"
+msgstr "时区"
+
+#: .\models\user.py:22
+msgid "administrator status"
+msgstr "管理员"
+
+#: .\models\user.py:23
+msgid "moderator status"
+msgstr "版主"
+
+#: .\models\user.py:25
+msgid "topic count"
+msgstr "主题数"
+
+#: .\models\user.py:45
+msgid ""
+"Required. 30 characters or fewer. Letters, numbers and @/./+/-/_ characters"
+msgstr "必须的,30个字符或更少. 字母，数字和@/./+/-/_ "
+
+#: .\models\user.py:48
+msgid "Enter a valid username."
+msgstr "请属于有限的用户名。"
+
+#: .\models\user.py:51
+msgid "first name"
+msgstr "名"
+
+#: .\models\user.py:52
+msgid "last name"
+msgstr "姓"
+
+#: .\models\user.py:53
+msgid "email"
+msgstr "邮箱"
+
+#: .\models\user.py:54
+msgid "staff status"
+msgstr "人员状态"
+
+#: .\models\user.py:55
+msgid "Designates whether the user can log into this admin site."
+msgstr ""
+
+#: .\models\user.py:57
+msgid "active"
+msgstr "激活"
+
+#: .\models\user.py:58
+msgid ""
+"Designates whether this user should be treated as active. Unselect this "
+"instead of deleting accounts."
+msgstr ""
+
+#: .\models\user.py:60
+msgid "date joined"
+msgstr "加入日期"
+
+#: .\models\user.py:91
+msgid "users"
+msgstr "用户"
+
+#: .\templates\403.html:10
+msgid "You do not have sufficient permissions to access this page"
+msgstr "你没有权限访问"
+
+#: .\templates\404.html:10
+msgid "what you are looking for is gone..."
+msgstr "没有找到相关资料"
+
+#: .\templates\spirit\_base.html:43
+msgid "{user} has mention you on {topic}"
+msgstr "{user} 在 {topic} 提起你"
+
+#: .\templates\spirit\_base.html:44
+msgid "{user} has commented on {topic}"
+msgstr "user} 在 {topic} 评论了你"
+
+#: .\templates\spirit\_base.html:45
+msgid "Show all"
+msgstr "显示全部"
+
+#: .\templates\spirit\_base.html:46
+msgid "No new notifications, yet"
+msgstr "没有更多通知了。"
+
+#: .\templates\spirit\_header.html:20 .\templates\spirit\user\menu.html:14
+msgid "Profile"
+msgstr "个人信息"
+
+#: .\templates\spirit\_header.html:21
+#: .\templates\spirit\admin\_side_menu.html:12
+#: .\templates\spirit\admin\index\dashboard.html:31
+#: .\templates\spirit\user\_profile.html:34
+#: .\templates\spirit\user\menu.html:15
+msgid "Topics"
+msgstr "主题"
+
+#: .\templates\spirit\_header.html:22 .\templates\spirit\user\menu.html:16
+msgid "Unread topics"
+msgstr "未读主题"
+
+#: .\templates\spirit\_header.html:23
+#: .\templates\spirit\topic_private\private_detail.html:13
+#: .\templates\spirit\topic_private\private_list.html:5
+#: .\templates\spirit\user\menu.html:17
+msgid "Private topics"
+msgstr "私有主题"
+
+#: .\templates\spirit\_header.html:26
+#: .\templates\spirit\admin\comment_flag\flag_detail.html:10
+#: .\templates\spirit\user\menu.html:20
+msgid "Admin"
+msgstr "管理"
+
+#: .\templates\spirit\_header.html:29 .\templates\spirit\user\menu.html:23
+msgid "Log out"
+msgstr "登出"
+
+#: .\templates\spirit\_header.html:42
+msgid "Log in"
+msgstr "登录"
+
+#: .\templates\spirit\admin\_side_menu.html:3
+msgid "Show menu"
+msgstr "显示菜单"
+
+#: .\templates\spirit\admin\_side_menu.html:9
+#: .\templates\spirit\admin\index\dashboard.html:5
+#: .\templates\spirit\admin\index\dashboard.html:11
+msgid "Dashboard"
+msgstr "主控台"
+
+#: .\templates\spirit\admin\_side_menu.html:10
+msgid "Basic settings"
+msgstr "基本设置"
+
+#: .\templates\spirit\admin\_side_menu.html:11
+#: .\templates\spirit\admin\index\dashboard.html:47
+msgid "Categories"
+msgstr "节点"
+
+#: .\templates\spirit\admin\_side_menu.html:13
+msgid "Users"
+msgstr "用户"
+
+#: .\templates\spirit\admin\_side_menu.html:14
+#: .\templates\spirit\admin\comment_flag\flag_detail.html:11
+#: .\templates\spirit\admin\index\dashboard.html:43
+msgid "Flags"
+msgstr "标记"
+
+#: .\templates\spirit\admin\category\category_create.html:5
+#: .\templates\spirit\admin\category\category_create.html:9
+msgid "Add Category"
+msgstr "添加节点"
+
+#: .\templates\spirit\admin\category\category_create.html:15
+#: .\templates\spirit\admin\category\category_update.html:15
+#: .\templates\spirit\admin\comment_flag\flag_detail.html:27
+#: .\templates\spirit\admin\config\config_basic.html:17
+#: .\templates\spirit\admin\user\user_edit.html:15
+#: .\templates\spirit\user\password_reset_confirm.html:16
+#: .\templates\spirit\user\profile_update.html:26
+msgid "Save"
+msgstr "保存"
+
+#: .\templates\spirit\admin\category\category_list.html:5
+#: .\templates\spirit\admin\category\category_list.html:11
+msgid "Category list"
+msgstr "节点列表"
+
+#: .\templates\spirit\admin\category\category_list.html:13
+msgid "Create Category"
+msgstr "新建节点"
+
+#: .\templates\spirit\admin\category\category_list.html:29
+#: .\templates\spirit\admin\category\category_list.html:44
+#: .\templates\spirit\admin\user\_user_list.html:11
+#: .\templates\spirit\comment\_render_list.html:60
+#: .\templates\spirit\topic\topic_detail.html:30
+#: .\templates\spirit\topic\topic_detail.html:32
+msgid "edit"
+msgstr "编辑"
+
+#: .\templates\spirit\admin\category\category_update.html:5
+#: .\templates\spirit\admin\category\category_update.html:9
+msgid "Update Category"
+msgstr "更新节点"
+
+#: .\templates\spirit\admin\comment_flag\_flag_list.html:11
+msgid "moderate"
+msgstr "工作人员"
+
+#: .\templates\spirit\admin\comment_flag\_tabs.html:4
+msgid "Open"
+msgstr "打开"
+
+#: .\templates\spirit\admin\comment_flag\_tabs.html:5
+#: .\templates\spirit\admin\topic\_tabs.html:5
+msgid "Closed"
+msgstr "已关闭"
+
+#: .\templates\spirit\admin\comment_flag\flag_closed.html:5
+#: .\templates\spirit\admin\comment_flag\flag_closed.html:11
+msgid "Closed flags"
+msgstr "已关闭的标记"
+
+#: .\templates\spirit\admin\comment_flag\flag_detail.html:5
+#: .\templates\spirit\admin\comment_flag\flag_detail.html:14
+msgid "Flag"
+msgstr "标记"
+
+#: .\templates\spirit\admin\comment_flag\flag_detail.html:18
+msgid "Moderated by"
+msgstr "管理"
+
+#: .\templates\spirit\admin\comment_flag\flag_detail.html:30
+msgid "Comment flagged"
+msgstr "已标记的留言"
+
+#: .\templates\spirit\admin\comment_flag\flag_detail.html:54
+#: .\templates\spirit\comment\_render_list.html:44
+msgid "delete"
+msgstr "删除"
+
+#: .\templates\spirit\admin\comment_flag\flag_detail.html:61
+msgid "Reporters"
+msgstr "报告人"
+
+#: .\templates\spirit\admin\comment_flag\flag_open.html:5
+#: .\templates\spirit\admin\comment_flag\flag_open.html:11
+msgid "Open flags"
+msgstr "打开标记"
+
+#: .\templates\spirit\admin\config\config_basic.html:5
+#: .\templates\spirit\admin\config\config_basic.html:11
+msgid "Basic Settings"
+msgstr "基本设置"
+
+#: .\templates\spirit\admin\index\dashboard.html:14
+msgid "Software"
+msgstr "软件"
+
+#: .\templates\spirit\admin\index\dashboard.html:17
+msgid "Installed"
+msgstr "已安装"
+
+#: .\templates\spirit\admin\index\dashboard.html:18
+msgid "Latest"
+msgstr "最新的"
+
+#: .\templates\spirit\admin\index\dashboard.html:22
+msgid "Statistics"
+msgstr "统计"
+
+#: .\templates\spirit\admin\index\dashboard.html:27
+msgid "Members"
+msgstr "会员"
+
+#: .\templates\spirit\admin\index\dashboard.html:35
+#: .\templates\spirit\user\_profile.html:33
+msgid "Comments"
+msgstr "评论"
+
+#: .\templates\spirit\admin\index\dashboard.html:39
+#: .\templates\spirit\user\_profile.html:35
+msgid "Likes"
+msgstr "喜欢"
+
+#: .\templates\spirit\admin\topic\_tabs.html:4
+msgid "Deleted"
+msgstr "已删除"
+
+#: .\templates\spirit\admin\topic\_tabs.html:6
+msgid "Pinned"
+msgstr "已置顶"
+
+#: .\templates\spirit\admin\topic\topic_closed.html:5
+#: .\templates\spirit\admin\topic\topic_closed.html:11
+msgid "Closed topics"
+msgstr "已关闭主题"
+
+#: .\templates\spirit\admin\topic\topic_deleted.html:5
+msgid "Deleted Topics"
+msgstr "已删除主题"
+
+#: .\templates\spirit\admin\topic\topic_deleted.html:11
+msgid "Deleted topics"
+msgstr "已删除主题"
+
+#: .\templates\spirit\admin\topic\topic_pinned.html:5
+#: .\templates\spirit\admin\topic\topic_pinned.html:11
+msgid "Pinned topics"
+msgstr "已置顶主题"
+
+#: .\templates\spirit\admin\user\_tabs.html:4
+#: .\templates\spirit\comment\_editor.html:7
+msgid "List"
+msgstr "列表"
+
+#: .\templates\spirit\admin\user\_tabs.html:5
+#: .\templates\spirit\admin\user\user_admins.html:5
+#: .\templates\spirit\admin\user\user_admins.html:11
+msgid "Admins"
+msgstr "管理员"
+
+#: .\templates\spirit\admin\user\_tabs.html:6
+#: .\templates\spirit\admin\user\user_mods.html:5
+#: .\templates\spirit\admin\user\user_mods.html:11
+msgid "Mods"
+msgstr "版主们"
+
+#: .\templates\spirit\admin\user\_tabs.html:7
+msgid "Unactive"
+msgstr "冻结"
+
+#: .\templates\spirit\admin\user\user_edit.html:5
+#: .\templates\spirit\admin\user\user_edit.html:9
+msgid "Edit user"
+msgstr "编辑用户"
+
+#: .\templates\spirit\admin\user\user_list.html:5
+#: .\templates\spirit\admin\user\user_list.html:11
+msgid "User list"
+msgstr "用户列表"
+
+#: .\templates\spirit\admin\user\user_unactive.html:5
+#: .\templates\spirit\admin\user\user_unactive.html:11
+msgid "Unactive Users"
+msgstr "冻结用户"
+
+#: .\templates\spirit\comment\_editor.html:5
+msgid "Bold"
+msgstr "加粗"
+
+#: .\templates\spirit\comment\_editor.html:6
+msgid "Italic"
+msgstr "斜体"
+
+#: .\templates\spirit\comment\_editor.html:8
+msgid "URL"
+msgstr ""
+
+#: .\templates\spirit\comment\_editor.html:9
+msgid "Image"
+msgstr "图片"
+
+#: .\templates\spirit\comment\_editor.html:10
+msgid "Preview"
+msgstr "预览"
+
+#: .\templates\spirit\comment\_editor.html:29
+msgid "bolded text"
+msgstr "加粗文字"
+
+#: .\templates\spirit\comment\_editor.html:30
+msgid "italicised text"
+msgstr "斜体文字"
+
+#: .\templates\spirit\comment\_editor.html:31
+msgid "list item"
+msgstr "条目列表"
+
+#: .\templates\spirit\comment\_editor.html:32
+msgid "link text"
+msgstr "链接文字"
+
+#: .\templates\spirit\comment\_editor.html:33
+msgid "link url"
+msgstr "链接URL"
+
+#: .\templates\spirit\comment\_editor.html:34
+msgid "image text"
+msgstr "图片文本"
+
+#: .\templates\spirit\comment\_editor.html:35
+msgid "image url"
+msgstr "图片URL"
+
+#: .\templates\spirit\comment\_form.html:17
+#: .\templates\spirit\comment\comment_publish.html:17
+#: .\templates\spirit\comment\comment_update.html:15
+#: .\templates\spirit\topic\topic_publish.html:30
+#: .\templates\spirit\topic_private\private_publish.html:19
+msgid "Publish"
+msgstr "发布"
+
+#: .\templates\spirit\comment\_render_list.html:47
+msgid "report"
+msgstr "报告"
+
+#: .\templates\spirit\comment\_render_list.html:50
+#: .\templates\spirit\comment\_render_list.html:110
+msgid "remove like"
+msgstr "不喜欢"
+
+#: .\templates\spirit\comment\_render_list.html:64
+msgid "quote"
+msgstr "引用"
+
+#: .\templates\spirit\comment\_render_list.html:65
+msgid "reply"
+msgstr "回复"
+
+#: .\templates\spirit\comment\_render_list.html:83
+msgid "This comment was deleted"
+msgstr "这个回复已经删除"
+
+#: .\templates\spirit\comment\_render_list.html:90
+msgid "undelete"
+msgstr "不删除"
+
+#: .\templates\spirit\comment\comment_moderate.html:5
+#: .\templates\spirit\comment\comment_moderate.html:9
+msgid "Moderate comment"
+msgstr "版主留言"
+
+#: .\templates\spirit\comment\comment_moderate.html:14
+#: .\templates\spirit\topic\topic_moderate.html:14
+msgid "Apply"
+msgstr "应用"
+
+#: .\templates\spirit\comment\comment_publish.html:5
+msgid "Publish comment"
+msgstr "发布留言"
+
+#: .\templates\spirit\comment\comment_publish.html:9
+msgid "Publishing comment on"
+msgstr "留言发布中"
+
+#: .\templates\spirit\comment\comment_update.html:5
+#: .\templates\spirit\comment\comment_update.html:9
+msgid "Edit comment"
+msgstr "编辑留言"
+
+#: .\templates\spirit\comment_flag\flag_create.html:5
+#: .\templates\spirit\comment_flag\flag_create.html:14
+msgid "Report"
+msgstr "报告"
+
+#: .\templates\spirit\comment_flag\flag_create.html:9
+msgid "Reporting %(username)s's comment"
+msgstr "报告 %(username)s 的留言"
+
+#: .\templates\spirit\comment_history\detail.html:5
+#: .\templates\spirit\comment_history\detail.html:11
+msgid "Comment history"
+msgstr "留言历史"
+
+#: .\templates\spirit\comment_like\like_create.html:5
+#: .\templates\spirit\comment_like\like_create.html:14
+msgid "Like"
+msgstr "喜欢"
+
+#: .\templates\spirit\comment_like\like_create.html:9
+msgid "Like %(username)s's comment"
+msgstr "喜欢 %(username)s 的留言"
+
+#: .\templates\spirit\comment_like\like_delete.html:5
+#: .\templates\spirit\comment_like\like_delete.html:13
+msgid "Remove like"
+msgstr "取消喜欢"
+
+#: .\templates\spirit\comment_like\like_delete.html:9
+msgid "Remove %(username)s's comment like"
+msgstr "取消 %(username)s 的留言的喜欢"
+
+#: .\templates\spirit\paginator\_paginator.html:4
+msgid "Page %(number)s of %(num_pages)s"
+msgstr "%(number)s / %(num_pages)s"
+
+#: .\templates\spirit\paginator\_paginator.html:8
+msgid "Last"
+msgstr "最后"
+
+#: .\templates\spirit\paginator\_paginator.html:10
+msgid "First"
+msgstr "最前"
+
+#: .\templates\spirit\paginator\_yt_paginator.html:5
+msgid "Page 1 of 1"
+msgstr "1/1"
+
+#: .\templates\spirit\search\_form.html:6
+#: .\templates\spirit\search\search.html:5
+#: .\templates\spirit\search\search.html:10
+#: .\templates\spirit\search\search.html:15
+msgid "Search"
+msgstr "搜索"
+
+#: .\templates\spirit\search\search.html:19
+msgid "Results"
+msgstr "结果"
+
+#: .\templates\spirit\search\search.html:28
+msgid "There are no search results."
+msgstr "搜索结果为空。"
+
+#: .\templates\spirit\topic\_render_list.html:45
+msgid "There are no topics here, yet"
+msgstr "主题为空，等您来发布。"
+
+#: .\templates\spirit\topic\_top_bar.html:8
+#: .\templates\spirit\topic\_top_bar.html:19
+msgid "All Categories"
+msgstr "所有节点"
+
+#: .\templates\spirit\topic\_top_bar.html:17
+msgid "All Subcategories"
+msgstr "所有子节点"
+
+#: .\templates\spirit\topic\_top_bar.html:27
+#: .\templates\spirit\topic\_top_bar.html:29
+msgid "Create Topic"
+msgstr "新建主题"
+
+#: .\templates\spirit\topic\topic_detail.html:10
+msgid "Main"
+msgstr "主页"
+
+#: .\templates\spirit\topic\topic_detail.html:42
+msgid "Select comments to move"
+msgstr "选择移动的留言"
+
+#: .\templates\spirit\topic\topic_detail.html:45
+msgid "Undelete topic"
+msgstr "取消删除主题"
+
+#: .\templates\spirit\topic\topic_detail.html:47
+msgid "Delete topic"
+msgstr "删除主题"
+
+#: .\templates\spirit\topic\topic_detail.html:51
+msgid "Open topic"
+msgstr "打开主题"
+
+#: .\templates\spirit\topic\topic_detail.html:53
+msgid "Close topic"
+msgstr "关闭主题"
+
+#: .\templates\spirit\topic\topic_detail.html:57
+msgid "Unpin topic"
+msgstr "取消主题置顶"
+
+#: .\templates\spirit\topic\topic_detail.html:59
+msgid "Pin topic"
+msgstr "主题置顶"
+
+#: .\templates\spirit\topic\topic_detail.html:68
+msgid "Topic id"
+msgstr "主题ID"
+
+#: .\templates\spirit\topic\topic_detail.html:70
+msgid "Move"
+msgstr "移动"
+
+#: .\templates\spirit\topic\topic_moderate.html:5
+#: .\templates\spirit\topic\topic_moderate.html:9
+msgid "Moderate topic"
+msgstr "适当的主题"
+
+#: .\templates\spirit\topic\topic_publish.html:5
+#: .\templates\spirit\topic\topic_publish.html:21
+msgid "Publish topic"
+msgstr "发布主题"
+
+#: .\templates\spirit\topic\topic_update.html:5
+#: .\templates\spirit\topic\topic_update.html:9
+msgid "Update topic"
+msgstr "更新主题"
+
+#: .\templates\spirit\topic\topic_update.html:15
+msgid "Update"
+msgstr "更新"
+
+#: .\templates\spirit\topic\topics_active.html:5
+msgid "Latest active topics"
+msgstr "最近主题"
+
+#: .\templates\spirit\topic_notification\_form.html:12
+msgid "Unnotify Me"
+msgstr "不通知我"
+
+#: .\templates\spirit\topic_notification\_form.html:14
+msgid "Notify Me"
+msgstr "通知我"
+
+#: .\templates\spirit\topic_notification\_render_list.html:9
+msgid ""
+"<a href=\"%(url_profile)s\">%(username)s</a> has commented on <a href=\"%"
+"(url_topic)s\">%(topic_title)s</a>"
+msgstr ""
+"<a href=\"%(url_profile)s\">%(username)s</a> 在 <a href=\"%"
+"(url_topic)s\">%(topic_title)s</a> 留言了"
+
+
+#: .\templates\spirit\topic_notification\_render_list.html:11
+msgid ""
+"<a href=\"%(url_profile)s\">%(username)s</a> has mention you on <a href=\"%"
+"(url_topic)s\">%(topic_title)s</a>"
+msgstr ""
+"<a href=\"%(url_profile)s\">%(username)s</a> 在 <a href=\"%"
+"(url_topic)s\">%(topic_title)s</a>提到你"
+
+
+#: .\templates\spirit\topic_notification\_render_list.html:17
+msgid "unread"
+msgstr "未读"
+
+#: .\templates\spirit\topic_notification\_render_list.html:21
+msgid "There are no notifications, yet"
+msgstr "没有通知了"
+
+#: .\templates\spirit\topic_notification\list.html:5
+#: .\templates\spirit\topic_notification\list.html:9
+msgid "Notifications"
+msgstr "通知"
+
+#: .\templates\spirit\topic_notification\list_unread.html:5
+#: .\templates\spirit\topic_notification\list_unread.html:9
+msgid "Unread notifications"
+msgstr "未读通知"
+
+#: .\templates\spirit\topic_notification\list_unread.html:15
+msgid "There are no new notifications"
+msgstr "没有新的通知"
+
+#: .\templates\spirit\topic_notification\list_unread.html:22
+#: .\templates\spirit\topic_unread\list.html:15
+msgid "Next"
+msgstr "下一个"
+
+#: .\templates\spirit\topic_private\_private_invite_form.html:7
+msgid "Invite"
+msgstr "邀请"
+
+#: .\templates\spirit\topic_private\_top_bar.html:6
+#: .\templates\spirit\topic_private\_top_bar.html:14
+msgid "Participating"
+msgstr "参与"
+
+#: .\templates\spirit\topic_private\_top_bar.html:8
+#: .\templates\spirit\topic_private\_top_bar.html:13
+msgid "Left"
+msgstr "离开"
+
+#: .\templates\spirit\topic_private\_top_bar.html:20
+msgid "Create private topic"
+msgstr "新建私有主题"
+
+#: .\templates\spirit\topic_private\private_created_list.html:5
+msgid "Created private topics"
+msgstr "新建私有主题"
+
+#: .\templates\spirit\topic_private\private_created_list.html:17
+msgid "join"
+msgstr "加入"
+
+#: .\templates\spirit\topic_private\private_delete.html:5
+msgid "Remove user from private topic"
+msgstr "从私有主题移出用户"
+
+#: .\templates\spirit\topic_private\private_delete.html:9
+msgid "Removing %(username)s's from %(topic_title)s"
+msgstr "把 %(username)s 从 %(topic_title)s 移出"
+
+#: .\templates\spirit\topic_private\private_delete.html:13
+msgid "Remove"
+msgstr "移除"
+
+#: .\templates\spirit\topic_private\private_detail.html:20
+msgid "Participants"
+msgstr "参与者"
+
+#: .\templates\spirit\topic_private\private_detail.html:36
+msgid "Leave topic"
+msgstr "离开主题"
+
+#: .\templates\spirit\topic_private\private_join.html:5
+msgid "Join topic"
+msgstr "加入主题"
+
+#: .\templates\spirit\topic_private\private_join.html:10
+msgid "Do you want to join %(topic_title)s?"
+msgstr "你确定要加入 %(topic_title)s 这个主题吗？"
+
+#: .\templates\spirit\topic_private\private_join.html:18
+msgid "Join"
+msgstr "加入"
+
+#: .\templates\spirit\topic_private\private_publish.html:5
+msgid "Publish a private topic"
+msgstr "发布私有主题"
+
+#: .\templates\spirit\topic_private\private_publish.html:9
+msgid "Publish private topic"
+msgstr "发布私有主题"
+
+#: .\templates\spirit\topic_unread\list.html:5
+#: .\templates\spirit\topic_unread\list.html:9
+msgid "Unread topics replies"
+msgstr "未读主题回复"
+
+#: .\templates\spirit\user\_profile.html:12
+msgid "Joined at"
+msgstr "加入"
+
+#: .\templates\spirit\user\_profile.html:16
+msgid "Seen"
+msgstr "阅读"
+
+#: .\templates\spirit\user\_profile.html:24
+#: .\templates\spirit\user\profile_update.html:5
+#: .\templates\spirit\user\profile_update.html:9
+msgid "Preferences"
+msgstr "设置"
+
+#: .\templates\spirit\user\_profile.html:28
+msgid "Private Message"
+msgstr "私信"
+
+#: .\templates\spirit\user\_render_comments_list.html:28
+msgid "There are no comments here, yet"
+msgstr "还没有留言"
+
+#: .\templates\spirit\user\activation_email.html:2
+msgid "You're receiving this email because you registered at %(site_name)s."
+msgstr "你注册了 %(site_name)s 将会收到这封邮件。"
+
+#: .\templates\spirit\user\activation_email.html:4
+msgid "Please go to the following link to activate your account:"
+msgstr "请点击一下链接去激活你的帐号："
+
+#: .\templates\spirit\user\activation_email.html:8
+#: .\templates\spirit\user\email_change_email.html:8
+#: .\templates\spirit\user\password_reset_email.html:9
+msgid "Thanks for using our site!"
+msgstr "谢谢您对我们的支持。"
+
+#: .\templates\spirit\user\email_change_email.html:2
+msgid ""
+"You're receiving this because you changed your user email at %(site_name)s."
+msgstr ""
+"你在%(site_name)s上面修改了你的邮件地址。"
+
+
+#: .\templates\spirit\user\email_change_email.html:4
+msgid "Please go to the following link to confirm your email change:"
+msgstr "请点击以下链接去确认您更改的邮件地址："
+
+#: .\templates\spirit\user\login.html:5 .\templates\spirit\user\login.html:9
+#: .\templates\spirit\user\login.html:16
+msgid "Login"
+msgstr "登录"
+
+#: .\templates\spirit\user\login.html:21
+msgid "Create an account"
+msgstr "新建帐号"
+
+#: .\templates\spirit\user\login.html:22
+msgid "I don't know my password"
+msgstr "我不知道我的密码"
+
+#: .\templates\spirit\user\menu.html:7
+msgid "User menu"
+msgstr "用户菜单"
+
+#: .\templates\spirit\user\menu.html:11
+msgid "Menu"
+msgstr "菜单"
+
+#: .\templates\spirit\user\notification_email.html:2
+msgid "You have a new notification at %(site_name)s."
+msgstr "你在%(site_name)s有新的通知"
+
+#: .\templates\spirit\user\notification_email.html:4
+msgid "Please go to the following link to read the comment:"
+msgstr "请点击以下链接阅读留言："
+
+#: .\templates\spirit\user\notification_email.html:8
+msgid ""
+"If you don't want to keep receiving notifications, you can deactivate them "
+"on your profile preferences."
+msgstr ""
+"如果你不想接收通知，你可以在个人设置中取消通知。"
+
+
+
+#: .\templates\spirit\user\password_reset_complete.html:7
+#: .\templates\spirit\user\password_reset_complete.html:11
+msgid "Password change successful"
+msgstr "密码更改成功"
+
+#: .\templates\spirit\user\password_reset_complete.html:13
+msgid "Continue to login"
+msgstr "继续并登录"
+
+#: .\templates\spirit\user\password_reset_confirm.html:5
+msgid "Password reset confirmation"
+msgstr "密码重设确认"
+
+#: .\templates\spirit\user\password_reset_confirm.html:11
+msgid "Enter new password"
+msgstr "输入新密码"
+
+#: .\templates\spirit\user\password_reset_confirm.html:21
+msgid "Password reset unsuccessful"
+msgstr "密码重设成功"
+
+#: .\templates\spirit\user\password_reset_confirm.html:23
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset."
+msgstr ""
+"密码重设地址已经无效，请重新重设你的密码。"
+
+
+#: .\templates\spirit\user\password_reset_done.html:5
+#: .\templates\spirit\user\password_reset_done.html:9
+msgid "Password reset successful"
+msgstr "密码重设成功"
+
+#: .\templates\spirit\user\password_reset_done.html:11
+msgid ""
+"We've emailed you instructions for setting your password. You should be "
+"receiving them shortly."
+msgstr "我们发了邮件区设置你的密码，请稍后接收邮件。"
+
+#: .\templates\spirit\user\password_reset_done.html:12
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with, and check your spam folder."
+msgstr "如果你没有收到邮件，请确认你的邮件地址，或者看看是不是在垃圾邮件箱。"
+
+#: .\templates\spirit\user\password_reset_email.html:2
+msgid ""
+"You're receiving this email because you requested a password reset for your "
+"user account at %(site_name)s."
+msgstr "你收到此邮件，因为你在%(site_name)s申请了重置密码。"
+
+#: .\templates\spirit\user\password_reset_email.html:4
+msgid "Please go to the following page and choose a new password:"
+msgstr "请根据页面去重设密码:"
+
+#: .\templates\spirit\user\password_reset_email.html:11
+msgid "The %(site_name)s team"
+msgstr "%(site_name)s团队"
+
+#: .\templates\spirit\user\password_reset_form.html:5
+#: .\templates\spirit\user\password_reset_form.html:9
+msgid "Password reset"
+msgstr "密码重设"
+
+#: .\templates\spirit\user\password_reset_form.html:15
+msgid "Reset my password"
+msgstr "密码重设"
+
+#: .\templates\spirit\user\password_reset_subject.txt:2
+msgid "Password reset on %(site_name)s"
+msgstr "%(site_name)s的密码重设"
+
+#: .\templates\spirit\user\profile_email_change.html:5
+#: .\templates\spirit\user\profile_email_change.html:9
+#: .\tests\tests_user.py:448 .\utils\user\email.py:48
+msgid "Email change"
+msgstr "更改邮箱"
+
+#: .\templates\spirit\user\profile_email_change.html:15
+msgid "Change my email"
+msgstr "更改我的邮箱"
+
+#: .\templates\spirit\user\profile_password_change.html:5
+#: .\templates\spirit\user\profile_password_change.html:9
+msgid "Password change"
+msgstr "更改密码"
+
+#: .\templates\spirit\user\profile_password_change.html:15
+msgid "Change my password"
+msgstr "更改我的密码"
+
+#: .\templates\spirit\user\profile_update.html:16
+msgid "Change password"
+msgstr "密码更改"
+
+#: .\templates\spirit\user\profile_update.html:18
+msgid "Avatar"
+msgstr "头像"
+
+#: .\templates\spirit\user\profile_update.html:19
+msgid "Change avatar"
+msgstr "头像修改"
+
+#: .\templates\spirit\user\register.html:5
+#: .\templates\spirit\user\register.html:9
+#: .\templates\spirit\user\register.html:15
+msgid "Register"
+msgstr "注册"
+
+#: .\templatetags\tags\comment.py:24
+msgid "This topic has been moved"
+msgstr "这个主题已移动"
+
+#: .\templatetags\tags\comment.py:26
+msgid "This topic has been closed"
+msgstr "这个主题已关闭"
+
+#: .\templatetags\tags\comment.py:28
+msgid "This topic has been unclosed"
+msgstr "这个主题已打开"
+
+#: .\templatetags\tags\comment.py:30
+msgid "This topic has been pinned"
+msgstr "这个主题已置顶"
+
+#: .\templatetags\tags\comment.py:32
+msgid "This topic has been unpinned"
+msgstr "这个主题已取消置顶"
+
+#: .\templatetags\tags\comment.py:34
+msgid "Unknown topic moderation action"
+msgstr "未知主题操作"
+
+#: .\templatetags\tags\utils.py:41
+msgid "now"
+msgstr "现在"
+
+#: .\templatetags\tags\utils.py:45
+msgid "%(count)ss"
+msgstr "%(count)s秒"
+
+#: .\templatetags\tags\utils.py:49
+msgid "%(count)sm"
+msgstr ""
+
+#: .\templatetags\tags\utils.py:52
+msgid "%(count)sh"
+msgstr "%(count)s小时"
+
+#: .\tests\tests_user.py:95 .\utils\user\email.py:40
+msgid "User activation"
+msgstr "用户激活"
+
+#: .\utils\timezone.py:7
+msgid "(GMT -12:00) Eniwetok, Kwajalein"
+msgstr ""
+
+#: .\utils\timezone.py:8
+msgid "(GMT -11:00) Midway Island, Samoa"
+msgstr ""
+
+#: .\utils\timezone.py:9
+msgid "(GMT -10:00) Hawaii"
+msgstr ""
+
+#: .\utils\timezone.py:10
+msgid "(GMT -9:00) Alaska"
+msgstr ""
+
+#: .\utils\timezone.py:11
+msgid "(GMT -8:00) Pacific Time (US & Canada)"
+msgstr ""
+
+#: .\utils\timezone.py:12
+msgid "(GMT -7:00) Mountain Time (US & Canada)"
+msgstr ""
+
+#: .\utils\timezone.py:13
+msgid "(GMT -6:00) Central Time (US & Canada), Mexico City"
+msgstr ""
+
+#: .\utils\timezone.py:14
+msgid "(GMT -5:00) Eastern Time (US & Canada), Bogota, Lima"
+msgstr ""
+
+#: .\utils\timezone.py:15
+msgid "(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz"
+msgstr ""
+
+#: .\utils\timezone.py:16
+msgid "(GMT -3:00) Brazil, Buenos Aires, Georgetown"
+msgstr ""
+
+#: .\utils\timezone.py:17
+msgid "(GMT -2:00) Mid-Atlantic"
+msgstr ""
+
+#: .\utils\timezone.py:18
+msgid "(GMT -1:00) Azores, Cape Verde Islands"
+msgstr ""
+
+#: .\utils\timezone.py:19
+msgid "(GMT) Western Europe Time, London, Lisbon, Casablanca"
+msgstr ""
+
+#: .\utils\timezone.py:20
+msgid "(GMT +1:00) Brussels, Copenhagen, Madrid, Paris"
+msgstr ""
+
+#: .\utils\timezone.py:21
+msgid "(GMT +2:00) Kaliningrad, South Africa"
+msgstr ""
+
+#: .\utils\timezone.py:22
+msgid "(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg"
+msgstr ""
+
+#: .\utils\timezone.py:23
+msgid "(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi"
+msgstr ""
+
+#: .\utils\timezone.py:24
+msgid "(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent"
+msgstr ""
+
+#: .\utils\timezone.py:25
+msgid "(GMT +6:00) Almaty, Dhaka, Colombo"
+msgstr ""
+
+#: .\utils\timezone.py:26
+msgid "(GMT +7:00) Bangkok, Hanoi, Jakarta"
+msgstr ""
+
+#: .\utils\timezone.py:27
+msgid "(GMT +8:00) Beijing, Perth, Singapore, Hong Kong"
+msgstr ""
+
+#: .\utils\timezone.py:28
+msgid "(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk"
+msgstr ""
+
+#: .\utils\timezone.py:29
+msgid "(GMT +10:00) Eastern Australia, Guam, Vladivostok"
+msgstr ""
+
+#: .\utils\timezone.py:30
+msgid "(GMT +11:00) Magadan, Solomon Islands, New Caledonia"
+msgstr ""
+
+#: .\utils\timezone.py:31
+msgid "(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka"
+msgstr ""
+
+#: .\utils\ratelimit\decorators.py:22
+msgid "Too many submissions, wait %(time)s."
+msgstr "太多请求了，请稍等%(time)s。"
+
+#: .\utils\user\email.py:57
+msgid "New notification: %(topic_name)s"
+msgstr "新通知: %(topic_name)s"
+
+#: .\views\user.py:58
+msgid "We have sent you an email so you can activate your account!"
+msgstr "我们已经发了激活邮件到您的邮箱！"
+
+#: .\views\user.py:79
+msgid "Your account has been activated!"
+msgstr "你的帐号已经激活！"
+
+#: .\views\user.py:91
+msgid "Your profile has been updated!"
+msgstr "你的信息已经更新！"
+
+#: .\views\user.py:106
+msgid "Your password has been changed!"
+msgstr "你的密码已更新"
+
+#: .\views\user.py:121
+msgid "We have sent you an email so you can confirm the change!"
+msgstr "我们已经发了邮件去确认你的修改！"
+
+#: .\views\user.py:137
+msgid "Your email has been changed!"
+msgstr "你的邮箱已经更改！"
+
+#: .\views\admin\category.py:47
+msgid "The category has been updated!"
+msgstr "节点已经更新"
+
+#: .\views\admin\comment_flag.py:35
+msgid "The flag has been moderated!"
+msgstr "标记已经标上"
+
+#: .\views\admin\config.py:20
+msgid "Settings updated!"
+msgstr "设置已更新！"
+
+#: .\views\admin\user.py:25
+msgid "This profile has been updated!"
+msgstr "你的个人信息已经更新！"
+
+
+#: .\views\admin\user.py:25
+msgid "This profile has been updated!"
+msgstr "你的个人信息已经更新！"
+
