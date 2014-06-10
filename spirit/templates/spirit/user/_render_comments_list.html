@@ -5,18 +5,19 @@
         {% for c in page %}
 
             <div class="comment">
-                <ul class="comment-info">
-                    <li><a href="{{ c.get_absolute_url }}"><i class="fa fa-comments"></i> {{ c.topic.title }}</a></li><!--
-			     --><li title="{{ c.date }}">{{ c.date|shortnaturaltime }}</li>
-                </ul>
+                <div class="comment-username">
+                    <a href="{{ c.get_absolute_url }}">{{ c.user.username }}</a>
+                </div>
+
+                <div class="comment-info">
+                    <li title="{{ c.date }}">{{ c.date|localtime|shortnaturaltime }}</li>
+                </div>
+
 
                 <div class="comment-media">
                     <div class="comment-img">
                         <img class="comment-avatar" src="{% get_gravatar_url user=c.user size=50 %}" />
 
-                        <div class="comment-username">
-                            <a href="{{ c.user.get_absolute_url }}">{{ c.user.username }}</a>
-                        </div>
                     </div>
 
                     <div class="comment-body">
