@@ -1172,7 +1172,7 @@ msgstr "密码重设成功"
 msgid ""
 "We've emailed you instructions for setting your password. You should be "
 "receiving them shortly."
-msgstr "我们发了邮件区设置你的密码，请稍后接收邮件。"
+msgstr "我们发了邮件去设置你的密码，请稍后接收邮件。"
 
 #: .\templates\spirit\user\password_reset_done.html:12
 msgid ""
