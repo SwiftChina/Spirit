@@ -1437,7 +1437,4 @@ msgid "This profile has been updated!"
 msgstr "你的个人信息已经更新！"
 
 
-#: .\views\admin\user.py:25
-msgid "This profile has been updated!"
-msgstr "你的个人信息已经更新！"
 
