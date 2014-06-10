@@ -421,7 +421,7 @@ msgstr "{user} 在 {topic} 提起你"
 
 #: .\templates\spirit\_base.html:44
 msgid "{user} has commented on {topic}"
-msgstr "user} 在 {topic} 评论了你"
+msgstr "{user} 在 {topic} 评论了你"
 
 #: .\templates\spirit\_base.html:45
 msgid "Show all"
