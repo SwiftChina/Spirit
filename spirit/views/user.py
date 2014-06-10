@@ -29,7 +29,7 @@ logger = logging.getLogger("django")
 User = get_user_model()
 
 
-@ratelimit(field='username', rate='5/5m')
+@ratelimit(field='username', rate='20/5m')
 def custom_login(request, **kwargs):
     # Current Django 1.5 login view does not redirect somewhere if the user is logged in
     if request.user.is_authenticated():
@@ -41,7 +41,7 @@ def custom_login(request, **kwargs):
     return login_view(request, authentication_form=LoginForm, **kwargs)
 
 
-@ratelimit(field='email', rate='5/5m')
+@ratelimit(field='email', rate='20/5m')
 def custom_reset_password(request, **kwargs):
     if request.is_limited and request.method == "POST":
         return redirect(reverse("spirit:password-reset"))
@@ -89,7 +89,7 @@ def registration_activation(request, pk, token):
     return redirect(reverse('spirit:user-login'))
 
 
-@ratelimit(field='email', rate='5/5m')
+@ratelimit(field='email', rate='20/5m')
 def resend_activation_email(request):
     if request.user.is_authenticated():
         return redirect(request.GET.get('next', reverse('spirit:profile-update')))

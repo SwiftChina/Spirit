@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 """
 Django settings for test2 project.
 
@@ -68,7 +70,12 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'zh_CN'
+
+LANGUAGES = (
+    ('zh-cn', u'中文'),
+    ('en', u'English'),
+)
 
 
 TIME_ZONE = 'UTC'

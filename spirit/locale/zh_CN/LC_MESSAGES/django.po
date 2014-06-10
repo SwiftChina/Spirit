@@ -344,6 +344,10 @@ msgstr "最近上线"
 msgid "last ip"
 msgstr "登录IP"
 
+#: .\models\user.py:20
+msgid "Last IP"
+msgstr "登录IP"
+
 #: .\models\user.py:21
 msgid "time zone"
 msgstr "时区"
@@ -1436,5 +1440,13 @@ msgstr "设置已更新！"
 msgid "This profile has been updated!"
 msgstr "你的个人信息已经更新！"
 
+#: .\views\admin\user.py:25
+msgid "Site name"
+msgstr "站点名称"
+
+
+#: .\views\admin\user.py:25
+msgid "Site description"
+msgstr "站点简介"
 
 
