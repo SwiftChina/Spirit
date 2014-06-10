@@ -10,7 +10,11 @@
         {% for t in page %}
 			<div class="row">
                 <div class="row-avatar">
-                    <img src="{% get_gravatar_url user=t.user size=50 %}" />
+                    <a href="{{ t.user.get_absolute_url }}">
+                        <img src="{% get_gravatar_url user=t.user size=50 %}" />
+                    </a>
+
+
                 </div>
                 <div class="row-content">
                     <div class="row-title">
@@ -28,8 +32,11 @@
                         {% endif %}
                     </div>
                     <div class="row-info">
-
                         <div>
+                             <a class="username{% if t.user.is_administrator %} is-admin{% elif t.user.is_moderator %} is-mod{% endif %}" href="{{ t.user.get_absolute_url }}">{{ t.user.username }}</a>
+                        </div>
+                        <div>
+                            <a href="{{ t.category.get_absolute_url }}">
                             {% if show_subcategory %}
                                 {{ t.category.title }}
                             {% else %}
@@ -39,8 +46,8 @@
                                     {{ t.category.title }}
                                 {% endif %}
                             {% endif %}
+                            </a>
                         </div>
-                        <div><a href="#">{{ t.user.username }}</a></div>
                         <div><i class="fa fa-comment"></i> {{ t.comment_count }}</div>
                         <div title="{{ t.date }}"><i class="fa fa-clock-o"></i> {{ t.last_active|shortnaturaltime }}</div>
                     </div>
