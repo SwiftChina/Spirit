@@ -129,8 +129,7 @@ TEMPLATE_LOADERS = (
     )),
 )
 
-<<<<<<< HEAD
-=======
+
 #
 # Third-party apps settings defined below...
 #
@@ -161,4 +160,4 @@ HAYSTACK_CONNECTIONS = {
         'PATH': os.path.join(os.path.dirname(__file__), 'whoosh_index'),
     },
 }
->>>>>>> settings refactor
+
