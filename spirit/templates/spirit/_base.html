@@ -61,6 +61,10 @@
 
 	</script>
 
+    <!-- Prism -->
+    <link rel="stylesheet" href="{{ STATIC_URL }}spirit/third/prism/prism.css">
+
+
     {% block head-extra %}{% endblock %}
 
     <!--[if (lt IE 9) & (!IEMobile)]>
@@ -83,11 +87,15 @@
 
   <body>
 
+
+
     {% include 'spirit/_header.html' %}
     {% render_messages messages %}
     {% block content %}{% endblock %}
     {% include 'spirit/_footer.html' %}
 
+    <!-- Prism -->
+    <script src="{{ STATIC_URL }}spirit/third/prism/prism.js"></script>
   </body>
 
 </html>
