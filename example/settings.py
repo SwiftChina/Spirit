@@ -60,12 +60,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-LANGUAGE_CODE = 'zh_CN'
-
-LANGUAGES = (
-    ('zh-cn', u'中文'),
-    ('en', u'English'),
-)
+LANGUAGE_CODE = 'zh-cn'
 
 
 TIME_ZONE = 'UTC'
@@ -110,12 +105,12 @@ LOGGING = {
     'handlers': 
         {
             'console':{
-            'level': 'DEBUG',
+            'level': 'ERROR',
             'class': 'logging.StreamHandler',
             'formatter': 'simple'
         },
         'file':{
-            'level': 'DEBUG',
+            'level': 'ERROR',
             'class': 'logging.FileHandler',
             'filename': 'techparty.log',
         },
