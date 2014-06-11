@@ -41,6 +41,10 @@ otherwise you will have to setup all django's related constants (Installed_apps,
 Run:
 
     pip install -r requirements.txt
+    python manage.py syncdb
+    python manage.py loaddata spirit_init
+    python manage.py createcachetable spirit_cache
+    python manage.py collectstatic
 
 
 > **Note:**
