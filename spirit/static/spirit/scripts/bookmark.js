@@ -3,6 +3,7 @@
     requires: waypoints
 */
 
+
 (function($) {
 
     var comment_number = window.location.hash.split("#c")[1];
@@ -20,34 +21,42 @@
         var settings = $.extend({
             csrf_token: "csrf_token",
             target: "target url",
-        }, options);
-        $this = $(this);
+        }, options),
+            $this = $(this);
 
 
         var post = function() {
+
                 $this.waypoint('disable');
+
                 $.post(settings.target, {
                     'csrfmiddlewaretoken': settings.csrf_token,
                     'comment_number': comment_number
                 }).always(function() {
+
                     $this.waypoint('enable');
+
                 });
-            };
+
+            }
+
 
         $this.waypoint(function() {
 
             var new_comment_number = $(this).data('number'); // HTML5 <... data-number=""> custom attr
             if(new_comment_number > comment_number) {
                 comment_number = new_comment_number;
+
                 post();
-            } else {
-                $this.waypoint('enable');
+
             }
+
         }, {
             offset: '100%',
         });
 
-        return $this;
+
+        return this;
 
     };
 

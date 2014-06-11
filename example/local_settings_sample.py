@@ -82,7 +82,10 @@ PASSWORD_HASHERS = (
     'django.contrib.auth.hashers.CryptPasswordHasher',
 )
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 65a7311df620f03656ec7ec8ed4aa5bcf3c1a729
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 TESTING = 'test' in sys.argv
@@ -99,5 +102,9 @@ else:
     TEMPLATE_LOADERS = (
         'django.template.loaders.filesystem.Loader',
         'django.template.loaders.app_directories.Loader',
+<<<<<<< HEAD
     )
 
+=======
+    )
+>>>>>>> 65a7311df620f03656ec7ec8ed4aa5bcf3c1a729

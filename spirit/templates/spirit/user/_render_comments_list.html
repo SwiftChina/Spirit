@@ -10,12 +10,15 @@
                 </div>
 
                 <div class="comment-info">
+                    <li><a href="{{ c.get_absolute_url }}"><i class="fa fa-comments"></i> {{ c.topic.title }}</a></li><!--
+                 --><li title="{{ c.date }}">{{ c.date|shortnaturaltime }}</li>
                 </div>
 
 
                 <div class="comment-media">
                     <div class="comment-img">
                         <img class="comment-avatar" src="{% get_gravatar_url user=c.user size=50 %}" />
+
                     </div>
 
                     <div class="comment-body">
