@@ -10,14 +10,12 @@
                 </div>
 
                 <div class="comment-info">
-                    <li title="{{ c.date }}">{{ c.date|localtime|shortnaturaltime }}</li>
                 </div>
 
 
                 <div class="comment-media">
                     <div class="comment-img">
                         <img class="comment-avatar" src="{% get_gravatar_url user=c.user size=50 %}" />
-
                     </div>
 
                     <div class="comment-body">

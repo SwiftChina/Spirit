@@ -224,6 +224,8 @@ input.move-comment-checkbox {
 
 .comment-media {
   @extend %media;
+  display: table;
+  clear: both;
 }
 
 .comment-img {
@@ -254,6 +256,10 @@ input.move-comment-checkbox {
   @extend %inline-list;
   font-size: 14px;
   text-align: right;
+  width: 40%;
+  float: right;
+
+
 }
 
 .comment-avatar {

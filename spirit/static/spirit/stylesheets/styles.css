@@ -927,6 +927,10 @@ input.move-comment-checkbox {
 .comment.is-highlighted {
   background: #ffffe9; }
 
+.comment-media {
+  display: table;
+  clear: both; }
+
 .comment-img {
   width: 50px;
   word-wrap: break-word;
@@ -944,7 +948,9 @@ input.move-comment-checkbox {
 
 .comment-info {
   font-size: 14px;
-  text-align: right; }
+  text-align: right;
+  width: 40%;
+  float: right; }
 
 .comment-avatar {
   border-radius: 25px; }

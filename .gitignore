@@ -2,6 +2,7 @@ db.sqlite3
 example/local_settings.py
 spirit/whoosh_index/
 venv/
+media/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
