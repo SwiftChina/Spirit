@@ -25,7 +25,7 @@
         } );
 
 
-        $.editor( {
+    $.editor( {
 			bolded_text: "{% trans "bolded text" %}",
 			italicised_text: "{% trans "italicised text" %}",
 			list_item_text: "{% trans "list item" %}",
@@ -36,11 +36,11 @@
 		} );
 
 
-        $.editor_image_upload( {
-			csrf_token: "{{ csrf_token }}",
-			target: "{% url "spirit:comment-image-upload-ajax" %}",
-			placeholder_text: "{% trans "uploading {image_name}" %}"
-		} );
+  //   $.editor_image_upload( {
+		// 	csrf_token: "{{ csrf_token }}",
+		// 	target: "{% url "spirit:comment-image-upload-ajax" %}",
+		// 	placeholder_text: "{% trans "uploading {image_name}" %}"
+		// } );
 
 	});
 </script>

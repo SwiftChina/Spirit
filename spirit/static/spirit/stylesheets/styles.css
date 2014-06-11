@@ -603,9 +603,6 @@ input[type="submit"].button,
 .comment-img {
   float: left; }
 
-.comment-body {
-  overflow: hidden; }
-
 .tab-link {
   display: block;
   font-size: 18px;
@@ -936,21 +933,28 @@ input.move-comment-checkbox {
   word-wrap: break-word;
   margin-right: 24px; }
 
-.comment-body blockquote {
-  margin: 0;
-  border-left: #cecece 4px solid;
-  padding-left: 24px; }
-.comment-body ul {
-  list-style-type: disc;
-  list-style-position: inside;
-  margin-left: 40px;
-  margin-bottom: 24px; }
+.comment-body {
+  padding-left: 74px;
+  width: 100%;
+  overflow: none; }
+  .comment-body blockquote {
+    margin: 0;
+    border-left: #cecece 4px solid;
+    padding-left: 24px; }
+  .comment-body ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-left: 40px;
+    margin-bottom: 24px; }
 
 .comment-info {
   font-size: 14px;
   text-align: right;
   width: 40%;
   float: right; }
+
+.comment-avatar {
+  border-radius: 25px; }
 
 .comment-avatar {
   border-radius: 25px; }
