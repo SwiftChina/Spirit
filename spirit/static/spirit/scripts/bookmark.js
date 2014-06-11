@@ -3,54 +3,65 @@
     requires: waypoints
 */
 
-	(function ( $ ) {
+(function($) {
 
-        var comment_number = window.location.hash.split( "#c" )[ 1 ];
-        comment_number = parseInt( comment_number, 10 );  // base 10
-
-        if ( !comment_number )
-		{
-			comment_number = 0;
-		}
-
-
-		$.fn.bookmark = function( options ) {
-
-            var settings = $.extend( {
-				csrf_token: "csrf_token",
-                target: "target url",
-			}, options );
+    var comment_number = window.location.hash.split("#c")[1];
+    comment_number = parseInt(comment_number, 10); // base 10
+    if(!comment_number) {
+        comment_number = 0;
+    } else {
+        // workaround to override the default comment number setted on topic_viewed (server side)
+        comment_number -= 1;
+    }
 
 
-            $this = this;
+    $.fn.bookmark = function(options) {
 
-			$this.waypoint(function() {
-
-                $this.waypoint( 'disable' );
-
-				var new_comment_number = $( this ).data( 'number' );  // HTML5 <... data-number=""> custom attr
-
-				if ( new_comment_number > comment_number ) {
-                    comment_number = new_comment_number;
-
-                    $.post( settings.target, { 'csrfmiddlewaretoken': settings.csrf_token,
-                                               'comment_number': new_comment_number })
-                        .always(function() {
-
-                            $this.waypoint( 'enable' );
-
-                        });
-
-				}
-				else {
-					$this.waypoint( 'enable' );
-				}
-
-			}, { offset: '100%', });
+        var settings = $.extend({
+            csrf_token: "csrf_token",
+            target: "target url",
+        }, options);
 
 
-			return $this;
+        $this = this;
 
-		};
 
-	}( jQuery ));
+
+        var post = function() {
+
+                $this.waypoint('disable');
+
+                $.post(settings.target, {
+                    'csrfmiddlewaretoken': settings.csrf_token,
+                    'comment_number': comment_number
+                }).always(function() {
+
+                    $this.waypoint('enable');
+
+                });
+
+            }
+
+
+        $this.waypoint(function() {
+
+            var new_comment_number = $(this).data('number'); // HTML5 <... data-number=""> custom attr
+            if(new_comment_number > comment_number) {
+                comment_number = new_comment_number;
+
+                post();
+
+            } else {
+                $this.waypoint('enable');
+            }
+
+        }, {
+            offset: '100%',
+        });
+
+
+        return $this;
+
+    };
+
+}(jQuery));
