@@ -71,3 +71,7 @@ class BasicConfigForm(ConfigForm):
     template_footer = forms.CharField(initial="", label=_("footer snippet"), required=False,
                                       widget=forms.Textarea(attrs={'rows': 2, }),
                                       help_text=_("This gets rendered just before the footer in your template."))
+
+    template_links = forms.CharField(initial="links", label=_("links"), required=False,
+                                      widget=forms.Textarea(attrs={'rows': 5, }),
+                                      help_text=_("Footer links template."))
