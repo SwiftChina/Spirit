@@ -73,11 +73,14 @@
 
             {% else %}
 
+
+                <div class="comment-username">
+                    <a href="{{ c.user.get_absolute_url }}">{{ c.user.username }}</a>
+                </div>
+
                 <div class="comment-media">
                     <div class="comment-img">
-                        <div class="comment-username">
-                            <a href="{{ c.user.get_absolute_url }}">{{ c.user.username }}</a>
-                        </div>
+                        <img class="comment-avatar" src="{% get_gravatar_url user=c.user size=50 %}" />
                     </div>
 
                     <div class="comment-body">
