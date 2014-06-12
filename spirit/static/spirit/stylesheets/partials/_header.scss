@@ -11,6 +11,18 @@
   color: $dark-grey;
 }
 
+.header-logo-image {
+
+  width: 150px;
+  height: 48px;
+
+  @include media( $medium ) {
+    width: 200px;
+    height: 64px;
+  }
+}
+
+
 .header-link {
   float: right;
   line-height: $base-line-height * 2;

@@ -3,7 +3,7 @@
     <header class="header js-tabs-container">
 		<a class="header-logo" href="{% url "spirit:index" %}">
             <!-- {{ config.site_name }} -->
-            <img src="{{ STATIC_URL }}spirit/images/swift_logo.png" alt="SwiftChina 中文Swift社区">
+            <img class="header-logo-image" src="{{ STATIC_URL }}spirit/images/swift_logo.png" alt="SwiftChina 中文Swift社区">
         </a>
 
         {% if user.is_authenticated %}
