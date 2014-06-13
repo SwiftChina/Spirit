@@ -46,7 +46,7 @@ def _render_paginator(context, page, page_var, hashtag):
 
 
 @register.assignment_tag(takes_context=True)
-def yt_paginator_autopaginate(context, object_list, per_page=15, page_var='page', page_number=None):
+def yt_paginator_autopaginate(context, object_list, per_page=20, page_var='page', page_number=None):
     return _get_page(context, object_list, per_page, page_var, page_number, YTPaginator)
 
 
@@ -56,7 +56,7 @@ def render_yt_paginator(context, page, page_var='page', hashtag=''):
 
 
 @register.assignment_tag(takes_context=True)
-def paginator_autopaginate(context, object_list, per_page=15, page_var='page', page_number=None):
+def paginator_autopaginate(context, object_list, per_page=20, page_var='page', page_number=None):
     return _get_page(context, object_list, per_page, page_var, page_number, Paginator)
 
 
