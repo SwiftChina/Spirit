@@ -104,20 +104,20 @@ LOGGING = {
     },
     'handlers': 
         {
-            'console':{
-            'level': 'ERROR',
-            'class': 'logging.StreamHandler',
-            'formatter': 'simple'
-        },
-        'file':{
-            'level': 'ERROR',
-            'class': 'logging.FileHandler',
-            'filename': 'techparty.log',
-        },
-        'mail_admins': {
-            'level': 'ERROR',
-            'filters': ['require_debug_false'],
-            'class': 'django.utils.log.AdminEmailHandler'
+            # 'console':{
+            #     'level': 'ERROR',
+            #     'class': 'logging.StreamHandler',
+            #     'formatter': 'simple'
+            # },
+            # 'file':{
+            #     'level': 'ERROR',
+            #     'class': 'logging.FileHandler',
+            #     'filename': 'debug.log',
+            # },
+            'mail_admins': {
+                'level': 'ERROR',
+                'filters': ['require_debug_false'],
+                'class': 'django.utils.log.AdminEmailHandler'
         }
     },
     'loggers': {
@@ -127,11 +127,11 @@ LOGGING = {
             'propagate': True,
         },
 
-        'django': {
-            'handlers': ['console','file'],
-            'level': 'ERROR',
-            'propagate': True,
-        },
+        # 'django': {
+        #     'handlers': ['console','file'],
+        #     'level': 'ERROR',
+        #     'propagate': True,
+        # },
     }
 }
 
