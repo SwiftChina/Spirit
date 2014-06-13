@@ -109,7 +109,7 @@ def topic_moderate(request, pk, value, remove=False, lock=False, pin=False):
 
 
 def topics_active(request):
-    topics = Topic.objects.for_public().filter(is_pinned=False)
+    topics = Topic.objects.for_public()
     topics_pinned = Topic.objects.filter(category_id=settings.ST_UNCATEGORIZED_CATEGORY_PK,
                                          is_removed=False,
                                          is_pinned=True)
