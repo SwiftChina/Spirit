@@ -122,6 +122,16 @@
                         } );
                     {% endif %}
 
+                    var elems = $('.comments .comment-body a');
+                    var domain = '';
+
+                    for(var i=0;i<elems.length;i++){
+                        domain = elems.eq(i).attr('href').split('//')[1].split('/')[0];
+                        if(domain != window.location.host){
+                            elems.eq(i).attr('target','blank');
+                        }
+                    }
+
                 });
             </script>
         {% endif %}
