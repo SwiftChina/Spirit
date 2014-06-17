@@ -45,14 +45,7 @@
             <a class="header-link" href="{% url "spirit:user-login" %}?next={% firstof request.get_full_path|urlencode '/' %}">{% trans "Log in" %}</a>
         {% endif %}
 
-        <ul class="header-tabs">
-            <a href="http://www.ruby-china.org" target="_blank">
-                <img width="140" height="32" src="http://ww2.sinaimg.cn/large/62503f09gw1ehgsjklyrwj207s01smx1.jpg" alt="">
-            </a>
-            <a href="http://www.techparty.org" target="_blank">
-                <img width="140" height="32" src="http://ww1.sinaimg.cn/large/62503f09gw1ehgslzye1dj207s01sdfr.jpg" alt="">
-            </a>
-            
-        </ul>
+        {{ config.template_header_links|safe }}
+
 
 	</header>
