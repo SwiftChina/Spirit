@@ -44,4 +44,8 @@
         {% else %}
             <a class="header-link" href="{% url "spirit:user-login" %}?next={% firstof request.get_full_path|urlencode '/' %}">{% trans "Log in" %}</a>
         {% endif %}
+
+        {{ config.template_header_links|safe }}
+
+
 	</header>

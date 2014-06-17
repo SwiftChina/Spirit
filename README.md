@@ -46,11 +46,20 @@ Run:
     python manage.py createcachetable spirit_cache
     python manage.py collectstatic
 
+i18n:
+Goto spirit subdirectory, use below command
+```bash
+django-admin.py compilemessages  
+```
 
 > **Note:**
 >
 > You will need to setup a search engine,
 > Spirit is configured to work with [Woosh](https://bitbucket.org/mchaput/whoosh/wiki/Home) by default.
+Use command to build index.
+```bash
+python manage.py rebuild_index
+```
 >
 > An email server is required, you can host your own (ie: [exim](http://www.exim.org/)),
 > or hire an external service provider (ie: [Mandrill](http://mandrill.com/)).
