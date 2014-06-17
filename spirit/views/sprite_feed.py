@@ -25,12 +25,12 @@ class LatestEntriesFeed(Feed):
 
     # Elements for the top-level, channel.
     title = u"SwiftChina"
-    link = "http://www.swift.sh"
-    author = 'swift'
-    description = u"中文swift社区"
+    link = "http://swift.sh"
+    author = 'swiftsh'
+    description = u"中文Swift社区"
 
     def items(self):
-        return Topic.objects.order_by('-last_active')[:10]
+        return Topic.objects.order_by('-last_active')[:32]
 
     def item_extra_kwargs(self, item):
         return {'content_encoded': self.item_content_encoded(item)}
