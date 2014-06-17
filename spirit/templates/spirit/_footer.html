@@ -3,5 +3,8 @@
       <footer class="footer">
             <div class="footer-container">
                   {{ config.template_links|safe }}
+                  <a href="{% url "spirit:latest_entries_feed" %}" target="_blank" style="margin-left: 10px;">
+                      <img src="{{ STATIC_URL }}spirit/images/rss.png">
+                  </a>
             </div>
       </footer>
