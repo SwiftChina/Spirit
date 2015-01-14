@@ -778,7 +778,7 @@ input[type="submit"].button,
   margin-right: 4px;
   margin-bottom: 4px;
   width: 100%;
-  padding-left: 58px; }
+  /*padding-left: 58px;*/ }
 
 .row-title {
   float: left;
