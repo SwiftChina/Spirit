@@ -773,12 +773,13 @@ input[type="submit"].button,
   height: 50px; }
 
 .row-content {
-  /*float: left;*/
+  /* float: left; */
   display: block;
   margin-right: 4px;
   margin-bottom: 4px;
   width: 100%;
-  /*padding-left: 58px;*/ }
+  /* padding-left: 58px; */ 
+}
 
 .row-title {
   float: left;
@@ -942,7 +943,7 @@ input.move-comment-checkbox {
   margin-right: 24px; }
 
 .comment-body {
-  padding-left: 74px;
+  /*padding-left: 74px;*/
   width: 100%;
   overflow: none; }
   .comment-body blockquote {
